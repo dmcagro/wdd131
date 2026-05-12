@@ -5,7 +5,5 @@ const today = new Date();
 
 year.textContent = today.getFullYear();
 
-lastModified.textContent =
-lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
-
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
