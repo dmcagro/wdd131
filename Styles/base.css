@@ -5,9 +5,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #222;
 }
 
 /* HEADER */
@@ -21,11 +20,10 @@ header {
     display: block;
     text-align: center;
     padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
 }
 
-/* NAVIGATION */
+/* FLEXBOX */
 
 nav {
     display: flex;
@@ -37,21 +35,23 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 1rem;
-    transition: background-color 0.3s;
 }
 
+/* HOVER */
+
 nav a:hover {
-    background-color: #ffffff;
+    background-color: white;
     color: #124e78;
 }
 
 /* MAIN */
 
 main {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
 
+    /* GRID */
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
@@ -60,62 +60,27 @@ main {
 main h1 {
     grid-column: 1 / 3;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 /* CARDS */
 
 .card {
     background-color: white;
+    border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #ccc;
 }
 
 .card h2 {
     background-color: #124e78;
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .card p,
 .card ul {
     padding: 1rem;
-}
-
-/* ABOUT SECTION */
-
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.about-content img {
-    width: 150px;
-    border-radius: 5px;
-}
-
-.location {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.location img {
-    width: 120px;
-}
-
-.location figure {
-    text-align: center;
-}
-
-.location figcaption {
-    font-size: 0.8rem;
-    font-style: italic;
 }
 
 /* FOOTER */
@@ -130,29 +95,4 @@ footer {
 
 #lastModified {
     color: yellow;
-    margin-top: 0.5rem;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 768px) {
-
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    main h1 {
-        grid-column: 1;
-    }
-
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-content,
-    .location {
-        flex-direction: column;
-        text-align: center;
-    }
 }
