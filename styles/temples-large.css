@@ -11,6 +11,11 @@
         flex-direction: row;
         gap: 1rem;
     }
+        .header-container {
+             flex-direction: row;
+             justify-content: space-between;
+             align-items: center;
+         }
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
