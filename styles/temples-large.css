@@ -4,11 +4,7 @@
         display: none;
     }
 
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+
 
     nav {
         display: flex;
