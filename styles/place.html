@@ -1,0 +1,71 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ibadan, Nigeria</title>
+
+    <meta name="description" content="Discover Ibadan, Nigeria including weather, culture, population, and landmarks.">
+    <meta name="author" content="Your Name">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ibadan, Nigeria</h1>
+    </header>
+
+    <main>
+
+        <picture class="hero">
+            <source media="(min-width: 768px)" srcset="images/ibadan-large.webp">
+
+            <img src="images/ibadan-small.webp" alt="Beautiful city view of Ibadan" loading="lazy">
+        </picture>
+
+        <section class="card data">
+            <h2>Data</h2>
+
+            <p><strong>Country:</strong> Nigeria</p>
+            <p><strong>State:</strong> Oyo State</p>
+            <p><strong>Population:</strong> 3.6 million</p>
+            <p><strong>Language:</strong> Yoruba & English</p>
+            <p><strong>Currency:</strong> Nigerian Naira</p>
+            <p><strong>Known For:</strong> Culture, Education, Brown Roofs</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temp">8</span>°C</p>
+
+            <p><strong>Conditions:</strong> Sunny</p>
+
+            <p><strong>Wind Speed:</strong>
+                <span id="speed">10</span> km/h
+            </p>
+
+            <p><strong>Wind Chill:</strong>
+                <span id="windchill"></span>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="year"></p>
+        <p id="modified"></p>
+    </footer>
+
+</body>
+
+</html>
+```
