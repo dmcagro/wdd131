@@ -114,7 +114,18 @@ footer {
     .weather-icon {
         display: none;
     }
-
+           
+    
+    footer {
+        background-color: #c8102e;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-weight: bold;
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    
+           
 }
 
-```
