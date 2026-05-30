@@ -1,4 +1,4 @@
-```css:root {
+root {
     --primary-color: #006400;
     --secondary-color: #ffffff;
     --accent-color: #c8102e;
@@ -68,13 +68,15 @@ main {
 
 /* FOOTER */
 
-footer {
-    background-color: var(--accent-color);
+footer  {
+            
+    background-color: #c8102e;
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: -5px;
+    padding: 2rem 1rem;
     font-weight: bold;
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
 /* MOBILE VIEW */
@@ -116,15 +118,7 @@ footer {
     }
            
     
-    footer {
-        background-color: #c8102e;
-        color: white;
-        text-align: center;
-        padding: 2rem 1rem;
-        font-weight: bold;
-        line-height: 1.8;
-        font-size: 1rem;
-    }
+    
     
            
 }
