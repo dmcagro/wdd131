@@ -1,4 +1,4 @@
-```javascript
+
 // FOOTER DATES
 
 const currentYear = new Date().getFullYear();
@@ -39,4 +39,8 @@ if (temperature <= 10 && windSpeed > 4.8) {
 
 document.querySelector("#windchill").textContent =
 windChill;
-```
+const currentYear = new Date().getFullYear();
+document.getElementById("year").textContent = currentYear;
+
+document.getElementById("lastModified").textContent =
+    `Last Modification: ${document.lastModified}`;
