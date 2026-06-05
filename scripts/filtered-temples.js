@@ -1,4 +1,5 @@
-console.log("JavaScript loaded!");// Gallery Container
+console.log("JavaScript loaded!");
+// Gallery Container
 const gallery = document.querySelector('.gallery');
 
 // Display Temples Function
