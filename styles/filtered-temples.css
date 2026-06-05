@@ -24,7 +24,7 @@ header {
 
 h2 {
     font-size: 2rem;
-}light
+}
 
 #menu-button {
     background: none;
@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -72,24 +72,36 @@ h1 {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-figure {
+/* Temple Cards */
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-figure img {
+.card h3 {
+    color: #4b0b75;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+.card img {
     width: 100%;
-    max-width: 300px;
-    height: 200px;
+    max-width: 350px;
+    height: 220px;
     object-fit: cover;
-}
-
-figcaption {
-    font-size: 0.9rem;
-    color: purple;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
 }
 
 footer {
@@ -100,3 +112,6 @@ footer {
     margin-top: 2rem;
 }
 
+footer p {
+    margin: 0.5rem 0;
+}
