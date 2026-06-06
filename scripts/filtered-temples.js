@@ -3,7 +3,8 @@ console.log("JavaScript loaded!");
 const gallery = document.querySelector('.gallery');
 const temples = [
     {
-        templeName: "Aba Nigeria",
+        templeName: "Aba Nigeria"
+        
         
    },
     
