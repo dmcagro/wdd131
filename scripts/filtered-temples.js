@@ -36,8 +36,8 @@ filteredTemples.forEach(temple => {
         <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
 
         <img
-            src="${temple.imageUrl}"
-            alt="${temple.templeName}"
+            src="${temple.imageurl}"
+            alt="${temple.AbaNigeria}"
             loading="lazy">
     `;
 
