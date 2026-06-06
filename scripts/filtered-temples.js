@@ -7,7 +7,14 @@ const temples = [
         
         
    },
-    
+   {
+        templeName:"Delta Nigeria"
+
+   },
+    {
+        templeName:"Abuja Nigeria"
+
+    },
 ];
 
 // Display Temples Function
