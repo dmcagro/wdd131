@@ -1,8 +1,16 @@
 console.log("JavaScript loaded!");
 // Gallery Container
 const gallery = document.querySelector('.gallery');
+const temples = [
+    {
+        templeName: "Aba Nigeria",
+        
+   },
+    
+];
 
 // Display Temples Function
+
 function displayTemples(filteredTemples) {
 
     
@@ -14,7 +22,7 @@ filteredTemples.forEach(temple => {
     card.classList.add('card');
 
     card.innerHTML = `
-        <h3> ${ temple.templeName }</h3 >
+        <h3>${temple.templeName}</h3>
         <p><strong>Location:</strong> ${temple.location}</p>
         <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
         <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
@@ -23,13 +31,17 @@ filteredTemples.forEach(temple => {
             src="${temple.imageUrl}"
             alt="${temple.templeName}"
             loading="lazy">
-    ;
+    `;
 
     gallery.appendChild(card);
 });
 
 
 }
+
+
+
+
 
 // Display all temples on page load
 displayTemples(temples);
@@ -64,7 +76,7 @@ const newTemples = temples.filter(
 );
 
 displayTemples(newTemples);
-```
+
 
 });
 
