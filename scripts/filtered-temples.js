@@ -3,20 +3,29 @@ console.log("JavaScript loaded!");
 const gallery = document.querySelector('.gallery');
 const temples = [
     {
-        templeName: "Aba Nigeria"
-        
-        
-   },
-   {
-        templeName:"Delta Nigeria"
-
-   },
-    {
-        templeName:"Abuja Nigeria"
-
+        templeName: "Aba Nigeria",
+        location: "Aba, Nigeria",
+        dedicated: "2005, August, 7",
+        area: 11500,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
     },
-];
 
+    {
+        templeName: "Delta Nigeria",
+        location: "Delta, Nigeria",
+        dedicated: "2025, January, 1",
+        area: 35000,
+        imageUrl: "https://via.placeholder.com/400x250"
+    },
+
+    {
+        templeName: "Abuja Nigeria",
+        location: "Abuja, Nigeria",
+        dedicated: "2024, December, 14",
+        area: 30000,
+        imageUrl: "https://via.placeholder.com/400x250"
+    }
+];
 // Display Temples Function
 
 function displayTemples(filteredTemples) {
@@ -36,9 +45,9 @@ filteredTemples.forEach(temple => {
         <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
 
         <img
-            src="${temple.imageurl}"
-            alt="${temple.AbaNigeria}"
-            loading="lazy">
+    src="${temple.imageUrl}"
+    alt="${temple.templeName}"
+    loading="lazy">
     `;
 
     gallery.appendChild(card);
