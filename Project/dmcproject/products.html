@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | DMC Agro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>DMC Agro Products</h1>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Farm Products & Inputs</h2>
+
+        <select id="categoryFilter">
+            <option value="all">All Products</option>
+            <option value="Seeds">Seeds</option>
+            <option value="Fertilizer">Fertilizer</option>
+            <option value="Equipment">Equipment</option>
+        </select>
+
+        <div id="productContainer" class="product-grid"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> DMC Agro</p>
+    </footer>
+
+</body>
+
+</html>
